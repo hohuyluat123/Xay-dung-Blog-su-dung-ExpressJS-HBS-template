@@ -1,0 +1,22 @@
+{{!-- view xem danh sách bài viết --}}
+<h2>BLOG HỌC TẬP </h2>
+<table style="width:100%" >
+  <tr>
+    <th></th>
+    <th>Danh sách Blog </th> 
+    <th></th>
+    <th></th>
+    <th></th> 
+  </tr>
+   {{#each list}}
+  <tr>
+    <td ><img src="site/image/blog.png" width="24" height="24"></td>
+    <td><a >{{content}} &#10095;</a> </td>
+    <td><a class="button button2" href="/edit/{{id}}">Edit</a></td>
+    <td><a class="button button4" href="/ReadDetail/{{id}}">Xem chi tiết</a></td>
+    <td><a class="button button3" href="/delete/{{id}}">Delete</a></td>
+  </tr>
+   {{/each }}
+</table>
+<a class="button button1" href="/create" >Tạo Blog</a>
+

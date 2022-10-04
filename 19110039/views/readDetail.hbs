@@ -1,0 +1,39 @@
+{{!-- view xem chi tiết bài viết --}}
+<h2>BLOG HỌC TẬP</h2>
+<section>
+  <article class="detailcontainer">
+    <h2>{{content}}</h2>
+  </article>
+  <a class="button button1" href="/home" >HOME</a>
+</section>
+<form action="/comment/{{id}}" method="post">
+  <div class="container">
+    <label for="comment"><b>Bình luận</b></label>
+    <input type="text" placeholder="Enter comment" name="comment" >
+ 
+    <button type="submit">Đăng</button>
+  </div>
+</form>
+<section>
+    <button class="buttondetail" id="comment" >Xem bình luận</button>
+<hr>
+<div class="detailcontainer" id="item">
+   {{#each comment}}
+  <div>
+    <a>{{this}}</a>
+  </div>
+  <hr>
+   {{/each }}
+   </div>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#comment").click(function(){
+    $("#item").toggle();
+  
+  });
+});
+</script>

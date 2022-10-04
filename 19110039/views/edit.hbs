@@ -1,0 +1,16 @@
+ {{!-- view edit blog --}}
+ <body>
+<h2>BLOG HỌC TẬP </h2>
+<form action="/edit/{{id}}" method="post">
+  <div class="imgcontainer">
+    <img src="https://firebasestorage.googleapis.com/v0/b/tiki-f1b48.appspot.com/o/f21364a5-12f4-45c1-8589-8464efea3633.png?alt=media" width="100px" height="100px" >
+  </div>
+
+  <div class="container">
+    <label for="content"><b>Chủ đề của bạn</b></label>
+    <input type="text" placeholder="Enter content" name="content" value="{{content}}" >
+ 
+    <button type="submit">Edit Blog</button>
+  </div>
+</form>
+</body>
