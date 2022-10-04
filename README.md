@@ -1,9 +1,12 @@
 # Xay-dung-Blog-su-dung-ExpressJS-HBS-template
  Họ và tên: Hồ Huy Luật
+ 
  MSSV: 19110039
  
  Cách chạy code: nodemon server.js
+ 
  có các chức năng:
+ 
  - Post bài viết
 
 - Xem các bài viết đã post
